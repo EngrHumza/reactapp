@@ -31,12 +31,11 @@ jobs:
         with:
           cmd: install # will run `yarn install` command
           
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build # will run `yarn build` command
+      - name: Build React App                              
+        run: yarn build
         
       - name: Install Surge
         run: npm install -g surge
       
       - name: Run Surge
-        run: surge ./ build bootcamp2020-project-two.surge.sh --token f30ecce04de34741d7eba72ccc2684a5
+        run: surge ./build bootcamp2020-project-two.surge.sh --token f30ecce04de34741d7eba72ccc2684a5
