@@ -2,8 +2,8 @@ import React from "react";
 
 function Hello(){
 
-    return <h1>Hello</h1>
+    return <h1>Hello from Humza</h1>
 
 }
 
-export default Home;
+export default Hello;
