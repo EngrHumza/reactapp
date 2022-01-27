@@ -1,8 +1,8 @@
 import React from "react";
 
-function Hello(){
+function Hello(props){
 
-    return <h1>Hello from Humza</h1>
+    return <h1>props.name</h1>
 
 }
 
